@@ -1,0 +1,29 @@
+<div class="parent" fxLayoutAlign="center center">
+    <div  *ngFor="let producto of getProductos()">
+        <div class="child" *ngIf="producto.quantity>0">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>{{producto.name}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div fxLayout="column">
+                    <div fxFlex="row" fxLayoutAlign="space-around">
+                        <p><mat-icon>book</mat-icon><a>&nbsp;Cantidad:&nbsp;</a></p>
+                        <p>{{producto.quantity}}</p>
+                    </div>
+                    <div fxFlex="row" fxLayoutAlign="space-around">
+                        <p><mat-icon>store</mat-icon><a>&nbsp;Defectuoso:&nbsp;</a></p>
+                        <p>{{producto.isFaulty}}</p>
+                    </div>
+                    <div fxFlex="row" fxLayoutAlign="space-around">
+                          <button mat-raised-button (click)="marcar(true, producto.id)">Defectuoso</button>
+                          <button mat-raised-button (click)="marcar(false, producto.id)">Apropiado</button>
+                    </div>
+                </div>
+            </mat-card-content>
+
+        </mat-card></div>
+    </div>
+</div>
+
+

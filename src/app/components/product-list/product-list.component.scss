@@ -1,0 +1,57 @@
+.imagenCiudad {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mat-card-header{
+    background-color:rgb(208, 208, 208) ;
+    padding-top: 10px;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .mat-card{
+    padding:0 ;
+    height: 10%;
+  }
+  
+  .mat-card-content{
+    padding:10px ;
+    
+  }
+
+  p {
+    display: inline-flex;
+    vertical-align: middle;
+  }
+
+  p mat-icon{
+    transform: scale(0.92);
+  }
+
+  a {
+    font-weight: 500;
+  }
+
+  .centrarImagen{
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  
+ .parent {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+  }
+
+  .child {
+    flex: 1 0 20%;
+    margin: 5px;
+    
+  }
